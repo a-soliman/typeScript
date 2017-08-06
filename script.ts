@@ -24,3 +24,9 @@
 //Rest and Spread
 const numbers: number[] = [1,10,99,-5];
 console.log(Math.max(...numbers))
+
+function makeArray(...args: number[]) {
+	return args;
+}
+
+console.log(makeArray(1,2,3))
