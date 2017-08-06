@@ -13,10 +13,14 @@
 // console.log('hi')
 
 // Default Pars in functions
-const countdown = (start: number = 10): void => {
-	while(start > 0) {
-		start--;
-	}
-	console.log("Done! ", start);
-}
-console.log(countdown())
+// const countdown = (start: number = 10): void => {
+// 	while(start > 0) {
+// 		start--;
+// 	}
+// 	console.log("Done! ", start);
+// }
+// console.log(countdown())
+
+//Rest and Spread
+const numbers: number[] = [1,10,99,-5];
+console.log(Math.max(...numbers))
