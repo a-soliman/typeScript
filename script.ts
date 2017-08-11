@@ -20,3 +20,16 @@ class Person {
 const person = new Person('Max', 'max');
 person.printAge();
 person.setType('something');
+
+// Inhritance 
+class Some extends Person {
+	name = "Max";
+	constructor(username) {
+		super("Max", username);
+		this.age = 31;
+	}
+}
+
+const some = new Some('max');
+
+console.log(some)
