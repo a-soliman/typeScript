@@ -1,32 +1,22 @@
-// let myName: string = "Ahmed";
-// let myAge: number = 29;
-// let anything: any;
-// anything = 12;
+class Person {
+	name: string;
+	private type: string;
+	protected age: number = 30;
 
-// let controlMe = (isTrue: boolean, somthingElse: boolean) => {
-// 	let result: number;
-// 	if(isTrue) {
-// 		result =12;
-// 	}
-// 	return result;
-// }
-// console.log('hi')
+	constructor(name: string, public username: string) {
+		this.name = name;
+	}
 
-// Default Pars in functions
-// const countdown = (start: number = 10): void => {
-// 	while(start > 0) {
-// 		start--;
-// 	}
-// 	console.log("Done! ", start);
-// }
-// console.log(countdown())
+	printAge() {
+		console.log(this.age)
+	}
 
-//Rest and Spread
-const numbers: number[] = [1,10,99,-5];
-console.log(Math.max(...numbers))
-
-function makeArray(...args: number[]) {
-	return args;
+	setType(type: string) {
+		this.type = type;
+		console.log(this.type);
+	}
 }
 
-console.log(makeArray(1,2,3))
+const person = new Person('Max', 'max');
+person.printAge();
+person.setType('something');
