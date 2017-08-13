@@ -1,3 +1,21 @@
+var MyMath;
+(function (MyMath) {
+    var Circle;
+    (function (Circle) {
+        var PI = 3.14;
+        function clacCircumference(diameter) {
+            return diameter * PI;
+        }
+        Circle.clacCircumference = clacCircumference;
+    })(Circle = MyMath.Circle || (MyMath.Circle = {}));
+})(MyMath || (MyMath = {}));
+var MyMath;
+(function (MyMath) {
+    function calculateRectangle(width, length) {
+        return width * length;
+    }
+    MyMath.calculateRectangle = calculateRectangle;
+})(MyMath || (MyMath = {}));
 // class Person {
 // 	name: string;
 // 	private type: string;
@@ -46,14 +64,32 @@
 // console.log(plant.species)
 // Static props & methods
 //========================
-var Helper = (function () {
-    function Helper() {
-    }
-    Helper.clacCircumference = function (diameter) {
-        return this.PI * diameter;
-    };
-    Helper.PI = 3.14;
-    return Helper;
-}());
-console.log(2 * Helper.PI);
-console.log(Helper.clacCircumference(8));
+// class Helper {
+// 	static PI: number = 3.14;
+// 	static clacCircumference(diameter: number): number {
+// 		return this.PI * diameter;
+// 	}
+// }
+// console.log(2 * Helper.PI);
+// console.log(Helper.clacCircumference(8));
+// =========================
+// Private constructor
+// class OnlyOne {
+// 	private static instance: OnlyOne;
+// 	private constructor(public name: string) {
+// 	}
+// 	static getInstance() {
+// 		if(!OnlyOne.instance) {
+// 			OnlyOne.instance = new OnlyOne('The Only One');
+// 		}
+// 		return OnlyOne.instance;
+// 	}
+// }
+// let wong = new OnlyOne('The Only One');
+// let right = OnlyOne.getInstance();
+// ===================================
+// === name space  ===
+/// <reference path="circleMAth.ts" />
+/// <reference path="rectangleMAth.ts" /> 
+console.log(MyMath.calculateRectangle(10, 20));
+console.log(MyMath.Circle.clacCircumference(3));

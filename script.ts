@@ -59,12 +59,43 @@
 // Static props & methods
 //========================
 
-class Helper {
-	static PI: number = 3.14;
-	static clacCircumference(diameter: number): number {
-		return this.PI * diameter;
-	}
-}
+// class Helper {
+// 	static PI: number = 3.14;
+// 	static clacCircumference(diameter: number): number {
+// 		return this.PI * diameter;
+// 	}
+// }
 
-console.log(2 * Helper.PI);
-console.log(Helper.clacCircumference(8));
+// console.log(2 * Helper.PI);
+// console.log(Helper.clacCircumference(8));
+
+// =========================
+// Private constructor
+
+// class OnlyOne {
+// 	private static instance: OnlyOne;
+
+// 	private constructor(public name: string) {
+
+// 	}
+
+// 	static getInstance() {
+// 		if(!OnlyOne.instance) {
+// 			OnlyOne.instance = new OnlyOne('The Only One');
+// 		}
+// 		return OnlyOne.instance;
+// 	}
+// }
+
+// let wong = new OnlyOne('The Only One');
+
+// let right = OnlyOne.getInstance();
+
+
+// ===================================
+// === name space  ===
+
+/// <reference path="circleMAth.ts" />
+/// <reference path="rectangleMAth.ts" /> 
+console.log(MyMath.calculateRectangle(10,20))
+console.log(MyMath.Circle.clacCircumference(3));
