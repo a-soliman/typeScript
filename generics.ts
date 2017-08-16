@@ -25,3 +25,31 @@ const testResults: Array<number> = [];
 testResults.push(22);
 
 console.log(testResults)
+
+
+// Arrays
+function printAll<T>(args: T[]) {
+	args.forEach((element) => console.log(element));
+}
+
+printAll<string>(["red", "black", "white"]);
+
+// Generic Types
+const echo2: <T>(data: T) => T = betterEcho;
+
+console.log(echo2<string>("Something"))
+
+
+// Generic Class
+class SimpleMath<T extends number | string> {
+	baseValue: T;
+	multiplyValue: T;
+	calculate(): number {
+		return +this.baseValue * +this.multiplyValue;
+	}
+}
+
+const simpleMath = new SimpleMath();
+simpleMath.baseValue = '10';
+simpleMath.multiplyValue = 20;
+console.log(simpleMath.calculate())
