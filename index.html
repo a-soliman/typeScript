@@ -2,9 +2,22 @@
 <html>
 <head>
 	<title>TypeScript</title>
+	<script src='node_modules/systemjs/dist/system.js'></script>
 </head>
 <body>
 
-	<script src='./script.js'></script>
+	
+
+	<script>
+	SystemJS.config({
+		baseURL:'/',
+		packages: {
+			'/': {
+				defaultExtension: 'js'
+			}
+		}
+	})
+  		SystemJS.import('script.js');
+	</script>
 </body>
 </html>
