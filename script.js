@@ -1,25 +1,9 @@
-var MyMath;
-(function (MyMath) {
-    var Circle;
-    (function (Circle) {
-        var PI = 3.14;
-        function clacCircumference(diameter) {
-            return diameter * PI;
-        }
-        Circle.clacCircumference = clacCircumference;
-    })(Circle = MyMath.Circle || (MyMath.Circle = {}));
-})(MyMath || (MyMath = {}));
-var MyMath;
-(function (MyMath) {
-    function calculateRectangle(width, length) {
-        return width * length;
-    }
-    MyMath.calculateRectangle = calculateRectangle;
-})(MyMath || (MyMath = {}));
+"use strict";
 // class Person {
 // 	name: string;
 // 	private type: string;
 // 	protected age: number = 30;
+exports.__esModule = true;
 // 	constructor(name: string, public username: string) {
 // 		this.name = name;
 // 	}
@@ -89,7 +73,14 @@ var MyMath;
 // let right = OnlyOne.getInstance();
 // ===================================
 // === name space  ===
-/// <reference path="circleMAth.ts" />
-/// <reference path="rectangleMAth.ts" /> 
-console.log(MyMath.calculateRectangle(10, 20));
-console.log(MyMath.Circle.clacCircumference(3));
+// /// <reference path="circleMAth.ts" />
+// /// <reference path="rectangleMAth.ts" /> 
+// console.log(MyMath.calculateRectangle(10,20))
+// console.log(MyMath.Circle.clacCircumference(3));
+// ============================================
+// === MODULES ==
+var circle_1 = require("./math/circle");
+var rectangle_1 = require("./math/rectangle");
+console.log(circle_1.PI);
+console.log(circle_1.claculateCircumference(10));
+console.log(rectangle_1.calculateRectangle(20, 10));

@@ -12,5 +12,8 @@
   "devDependencies": {
     "lite-server": "^2.3.0",
     "tsc-watch": "^1.0.7"
+  },
+  "dependencies": {
+    "systemjs": "^0.20.17"
   }
 }
