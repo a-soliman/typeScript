@@ -1,21 +1,3 @@
-var MyMath;
-(function (MyMath) {
-    var Circle;
-    (function (Circle) {
-        var PI = 3.14;
-        function clacCircumference(diameter) {
-            return diameter * PI;
-        }
-        Circle.clacCircumference = clacCircumference;
-    })(Circle = MyMath.Circle || (MyMath.Circle = {}));
-})(MyMath || (MyMath = {}));
-var MyMath;
-(function (MyMath) {
-    function calculateRectangle(width, length) {
-        return width * length;
-    }
-    MyMath.calculateRectangle = calculateRectangle;
-})(MyMath || (MyMath = {}));
 // class Person {
 // 	name: string;
 // 	private type: string;
