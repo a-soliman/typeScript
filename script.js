@@ -1,7 +1,9 @@
+"use strict";
 // class Person {
 // 	name: string;
 // 	private type: string;
 // 	protected age: number = 30;
+exports.__esModule = true;
 // 	constructor(name: string, public username: string) {
 // 		this.name = name;
 // 	}
@@ -71,7 +73,14 @@
 // let right = OnlyOne.getInstance();
 // ===================================
 // === name space  ===
-/// <reference path="circleMAth.ts" />
-/// <reference path="rectangleMAth.ts" /> 
-console.log(MyMath.calculateRectangle(10, 20));
-console.log(MyMath.Circle.clacCircumference(3));
+// /// <reference path="circleMAth.ts" />
+// /// <reference path="rectangleMAth.ts" /> 
+// console.log(MyMath.calculateRectangle(10,20))
+// console.log(MyMath.Circle.clacCircumference(3));
+// ============================================
+// === MODULES ==
+var Circle = require("./math/circle");
+var rectangle_1 = require("./math/rectangle");
+console.log(Circle.PI);
+console.log(Circle.claculateCircumference(10));
+console.log(rectangle_1.calculateRectangle(20, 10));

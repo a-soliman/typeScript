@@ -95,7 +95,16 @@
 // ===================================
 // === name space  ===
 
-/// <reference path="circleMAth.ts" />
-/// <reference path="rectangleMAth.ts" /> 
-console.log(MyMath.calculateRectangle(10,20))
-console.log(MyMath.Circle.clacCircumference(3));
+// /// <reference path="circleMAth.ts" />
+// /// <reference path="rectangleMAth.ts" /> 
+// console.log(MyMath.calculateRectangle(10,20))
+// console.log(MyMath.Circle.clacCircumference(3));
+
+// ============================================
+// === MODULES ==
+import * as Circle from "./math/circle";
+import { calculateRectangle } from "./math/rectangle";
+
+console.log(Circle.PI)
+console.log(Circle.claculateCircumference(10))
+console.log(calculateRectangle(20, 10));
