@@ -79,8 +79,8 @@ exports.__esModule = true;
 // console.log(MyMath.Circle.clacCircumference(3));
 // ============================================
 // === MODULES ==
-var circle_1 = require("./math/circle");
+var Circle = require("./math/circle");
 var rectangle_1 = require("./math/rectangle");
-console.log(circle_1.PI);
-console.log(circle_1.claculateCircumference(10));
+console.log(Circle.PI);
+console.log(Circle.claculateCircumference(10));
 console.log(rectangle_1.calculateRectangle(20, 10));

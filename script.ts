@@ -102,9 +102,9 @@
 
 // ============================================
 // === MODULES ==
-import { PI, claculateCircumference } from "./math/circle";
+import * as Circle from "./math/circle";
 import { calculateRectangle } from "./math/rectangle";
 
-console.log(PI)
-console.log(claculateCircumference(10))
+console.log(Circle.PI)
+console.log(Circle.claculateCircumference(10))
 console.log(calculateRectangle(20, 10));
