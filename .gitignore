@@ -1,3 +1,8 @@
 node_modules/
+<<<<<<< HEAD
 
 *.js
+=======
+*.js
+script.js
+>>>>>>> 34aec86f2ac1532d869a4de8235ed086e6c1714c
