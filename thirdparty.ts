@@ -1,4 +1,4 @@
 import "./node_modules/jquery/dist/jquery.min.js";
 
-$('#app').css({"background-color": "green"})
+$('#app').css({"background-color": "red"})
 

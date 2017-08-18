@@ -3,7 +3,7 @@
 // 	name: string;
 // 	private type: string;
 // 	protected age: number = 30;
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 // 	constructor(name: string, public username: string) {
 // 		this.name = name;
 // 	}
